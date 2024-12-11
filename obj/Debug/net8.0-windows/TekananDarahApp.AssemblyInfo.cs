@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TekananDarahApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9982f902dda48463c7ef52985c7beb89ccaf029a")]
 [assembly: System.Reflection.AssemblyProductAttribute("TekananDarahApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TekananDarahApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

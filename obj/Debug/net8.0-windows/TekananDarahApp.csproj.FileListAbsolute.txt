@@ -31,3 +31,5 @@ C:\Users\default.LAPTOP-6NP8KO3R\source\repos\TekananDarahApp\TekananDarahApp\bi
 C:\Users\default.LAPTOP-6NP8KO3R\source\repos\TekananDarahApp\TekananDarahApp\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll
 C:\Users\default.LAPTOP-6NP8KO3R\source\repos\TekananDarahApp\TekananDarahApp\obj\Debug\net8.0-windows\TekananDarahApp.DailyHealthUserControl.resources
 C:\Users\default.LAPTOP-6NP8KO3R\source\repos\TekananDarahApp\TekananDarahApp\obj\Debug\net8.0-windows\TekananDarahApp.DashboardUserControl.resources
+C:\Users\default.LAPTOP-6NP8KO3R\source\repos\TekananDarahApp\TekananDarahApp\obj\Debug\net8.0-windows\TekananDarahApp.UpdateForm.resources
+C:\Users\default.LAPTOP-6NP8KO3R\source\repos\TekananDarahApp\TekananDarahApp\obj\Debug\net8.0-windows\TekananDarahApp.sourcelink.json

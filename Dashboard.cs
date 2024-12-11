@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TekananDarahApp.Services;
 
 namespace TekananDarahApp
 {
@@ -74,6 +75,18 @@ namespace TekananDarahApp
         {
             panelLeft.Height = buttonUser.Height;
             panelLeft.Top = buttonUser.Top;
+        }
+
+        public void ShowUpdatePanel(DailyHealthRecord record)
+        {
+            UpdateForm updateForm = new UpdateForm
+            {
+                CurrentRecord = record,
+                Dock = DockStyle.Fill
+            };
+
+            panel2.Controls.Clear();
+            panel2.Controls.Add(updateForm);
         }
     }
 }

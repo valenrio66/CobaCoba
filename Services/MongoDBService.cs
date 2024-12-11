@@ -83,6 +83,27 @@ namespace TekananDarahApp.Services
             return collection.Find(_ => true).ToList();
         }
 
+        public void UpdateHealthRecord(DailyHealthRecord record)
+        {
+            var database = new MongoClient("mongodb://localhost:27017/").GetDatabase("healthdb");
+            var collection = database.GetCollection<DailyHealthRecord>("healthrecord");
+            var filter = Builders<DailyHealthRecord>.Filter.Eq("_id", record.Id);
+            var update = Builders<DailyHealthRecord>.Update
+                .Set("bloodPressure", record.BloodPressure)
+                .Set("bloodSugarLevel", record.BloodSugarLevel)
+                .Set("date", record.Date)
+                .Set("weight", record.Weight);
+
+            collection.UpdateOne(filter, update);
+        }
+
+        public void DeleteHealthRecord(ObjectId recordId)
+        {
+            var database = new MongoClient("mongodb://localhost:27017/").GetDatabase("healthdb");
+            var collection = database.GetCollection<DailyHealthRecord>("healthrecord");
+            var filter = Builders<DailyHealthRecord>.Filter.Eq("_id", recordId);
+            collection.DeleteOne(filter);
+        }
     }
 
     public class User
@@ -126,5 +147,4 @@ namespace TekananDarahApp.Services
         [BsonElement("bloodSugarLevel")]
         public double BloodSugarLevel { get; set; }
     }
-
 }
